@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curriculum vitae of Alex, Jr. A. Aparece — BSIT student and full-stack developer from Davao del Norte, Philippines.">
+  <title>Alex, Jr. A. Aparece | CV</title>
+
+  <link rel="icon" href="assets/images/profile.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/print.css">
+
+  <script src="js/utils/theme.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">alex<span>.</span>aparece</a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list" id="nav-list" data-nav-list>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#education">Education</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="html/contact.html">Contact</a></li>
+        </ul>
+
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn nav__toggle" type="button" aria-label="Open menu" aria-controls="nav-list" aria-expanded="false" data-nav-toggle>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Profile -->
+    <section class="hero container" aria-labelledby="profile-name">
+      <div class="hero__card">
+        <img class="hero__photo" src="assets/images/profile.png" alt="Portrait of Alex, Jr. A. Aparece in a black tuxedo" width="492" height="636">
+
+        <div>
+          <h1 class="hero__name" id="profile-name">Alex, Jr. A. Aparece</h1>
+          <p class="hero__role">Full-Stack Developer &middot; BSIT Student</p>
+          <p class="hero__summary">
+            Fourth-year Information Technology student at Davao del Norte State College who builds
+            web applications end to end &mdash; responsive frontends in React, Vue, and Next.js backed by
+            APIs in FastAPI, Laravel, and Express.
+          </p>
+
+          <ul class="hero__meta">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Davao del Norte, Philippines
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              BSIT 4B &middot; IT415
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              <a href="mailto:alexarnaizaparece@gmail.com">alexarnaizaparece@gmail.com</a>
+            </li>
+          </ul>
+
+          <div class="hero__actions">
+            <button class="btn btn--primary" type="button" data-print>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+              Download CV
+            </button>
+            <a class="btn btn--ghost" href="html/contact.html">Get in touch</a>
+
+            <div class="social-links">
+              <a class="icon-btn" href="https://github.com/Etriii" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+              </a>
+              <a class="icon-btn" href="https://www.linkedin.com/in/alexaparecejr/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+              </a>
+              <a class="icon-btn" href="https://www.facebook.com/alexaparecejr" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.23 2.68.23v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07Z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <div class="section__header">
+        <div>
+          <span class="section__eyebrow">01 &mdash; About</span>
+          <h2 class="section__title" id="about-title">About Me</h2>
+        </div>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <h3 class="card__title">Profile</h3>
+          <p>
+            I am an IT student who enjoys turning manual, paper-based processes into working software.
+            My school projects range from a resort booking platform to a collection management system for ICSA,
+            and outside class I build small, focused services &mdash; authentication, rate limiting,
+            pagination, and media uploads &mdash; to understand how production backends are put together.
+          </p>
+          <p>
+            I started coding with Java desktop systems in my first year and have since moved across the
+            stack, working with JavaScript and TypeScript frameworks on the frontend and Python and PHP on
+            the backend, deployed on platforms like Vercel and GitHub Pages.
+          </p>
+          <blockquote class="quote">&ldquo;You never fail until you stop trying.&rdquo;</blockquote>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Personal Details</h3>
+          <dl class="details">
+            <div><dt>Full name</dt><dd>Alex Arnaiz Aparece Jr.</dd></div>
+            <div><dt>Course</dt><dd>BS Information Technology</dd></div>
+            <div><dt>Year level</dt><dd>4th Year</dd></div>
+            <div><dt>Set/Section</dt><dd>BSIT 4B</dd></div>
+            <div><dt>Subject</dt><dd>IT415</dd></div>
+            <div><dt>Location</dt><dd>Davao del Norte, Philippines</dd></div>
+            <div><dt>GitHub</dt><dd><a href="https://github.com/Etriii" target="_blank" rel="noopener noreferrer">@Etriii</a></dd></div>
+          </dl>
+
+          <div class="stats" aria-label="GitHub statistics">
+            <div class="stat">
+              <span class="stat__value" data-github-stat="repos">48</span>
+              <span class="stat__label">Public repos</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" data-github-stat="followers">463</span>
+              <span class="stat__label">Followers</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" data-github-stat="stars">64</span>
+              <span class="stat__label">Stars earned</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section container" id="education" aria-labelledby="education-title">
+      <div class="section__header">
+        <div>
+          <span class="section__eyebrow">02 &mdash; Education</span>
+          <h2 class="section__title" id="education-title">Education</h2>
+        </div>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline__item card">
+          <span class="timeline__period">Present &middot; A.Y. 2026&ndash;2027</span>
+          <h3 class="timeline__title">Bachelor of Science in Information Technology</h3>
+          <p class="timeline__subtitle">Davao del Norte State College &mdash; Institute of Computing</p>
+          <ul class="timeline__points">
+            <li>4th Year, Set BSIT 4B; currently taking IT415.</li>
+            <li>Built <em>The Ocean View</em>, a resort booking and management system, for IT223.</li>
+            <li>Co-developed the ICSA Collection Management System with a student team.</li>
+            <li>Earlier coursework projects include Java desktop systems and Bootstrap websites.</li>
+          </ul>
+        </li>
+        <li class="timeline__item card">
+          <span class="timeline__period">Grades 11&ndash;12</span>
+          <h3 class="timeline__title">Senior High School</h3>
+          <p class="timeline__subtitle">First steps into web development</p>
+          <ul class="timeline__points">
+            <li>Built a personal portfolio website as a Grade 11 side project.</li>
+            <li>Created a JavaScript Q&amp;A platform and calculator in Grade 12.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Skills -->
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <div class="section__header">
+        <div>
+          <span class="section__eyebrow">03 &mdash; Skills</span>
+          <h2 class="section__title" id="skills-title">Technical Skills</h2>
+        </div>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card">
+          <h3 class="card__title">Languages</h3>
+          <ul class="chip-list">
+            <li><span class="chip">JavaScript</span></li>
+            <li><span class="chip">TypeScript</span></li>
+            <li><span class="chip">Python</span></li>
+            <li><span class="chip">PHP</span></li>
+            <li><span class="chip">Java</span></li>
+            <li><span class="chip">C#</span></li>
+            <li><span class="chip">C / C++</span></li>
+            <li><span class="chip">Dart</span></li>
+            <li><span class="chip">Bash</span></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Frontend</h3>
+          <ul class="chip-list">
+            <li><span class="chip">React</span></li>
+            <li><span class="chip">Vue</span></li>
+            <li><span class="chip">Next.js</span></li>
+            <li><span class="chip">Angular</span></li>
+            <li><span class="chip">Flutter</span></li>
+            <li><span class="chip">Tailwind CSS</span></li>
+            <li><span class="chip">Bootstrap</span></li>
+            <li><span class="chip">Vite</span></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Backend</h3>
+          <ul class="chip-list">
+            <li><span class="chip">FastAPI</span></li>
+            <li><span class="chip">Laravel</span></li>
+            <li><span class="chip">Express.js</span></li>
+            <li><span class="chip">Django REST</span></li>
+            <li><span class="chip">Supabase</span></li>
+            <li><span class="chip">Redis</span></li>
+            <li><span class="chip">JWT / OAuth2</span></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Databases</h3>
+          <ul class="chip-list">
+            <li><span class="chip">MySQL</span></li>
+            <li><span class="chip">PostgreSQL</span></li>
+            <li><span class="chip">DynamoDB</span></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Cloud &amp; DevOps</h3>
+          <ul class="chip-list">
+            <li><span class="chip">AWS</span></li>
+            <li><span class="chip">Google Cloud</span></li>
+            <li><span class="chip">Azure</span></li>
+            <li><span class="chip">Vercel</span></li>
+            <li><span class="chip">Cloudflare</span></li>
+            <li><span class="chip">GitHub Actions</span></li>
+            <li><span class="chip">Cloudinary</span></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Tools</h3>
+          <ul class="chip-list">
+            <li><span class="chip">Git &amp; GitHub</span></li>
+            <li><span class="chip">VS Code</span></li>
+            <li><span class="chip">Android Studio</span></li>
+            <li><span class="chip">Postman</span></li>
+            <li><span class="chip">Figma</span></li>
+            <li><span class="chip">Linux</span></li>
+            <li><span class="chip">npm</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section class="section container" id="projects" aria-labelledby="projects-title">
+      <div class="section__header">
+        <div>
+          <span class="section__eyebrow">04 &mdash; Projects</span>
+          <h2 class="section__title" id="projects-title">Featured Projects</h2>
+        </div>
+        <a class="btn btn--ghost no-print" href="html/projects.html">View all projects</a>
+      </div>
+
+      <div class="grid grid--3" data-featured-projects>
+        <noscript>
+          <p>Enable JavaScript to see featured projects, or browse them on <a href="https://github.com/Etriii?tab=repositories">GitHub</a>.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="section container" id="achievements" aria-labelledby="achievements-title">
+      <div class="section__header">
+        <div>
+          <span class="section__eyebrow">05 &mdash; Achievements</span>
+          <h2 class="section__title" id="achievements-title">GitHub Achievements</h2>
+        </div>
+      </div>
+
+      <article class="card">
+        <ul class="chip-list">
+          <li><span class="chip chip--accent">Pull Shark &times;2</span></li>
+          <li><span class="chip chip--accent">Quickdraw</span></li>
+          <li><span class="chip chip--accent">Starstruck</span></li>
+          <li><span class="chip chip--accent">YOLO</span></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span data-year>2026</span> Alex, Jr. A. Aparece</span>
+      <span>IT415 &middot; BSIT 4B &middot; Davao del Norte State College</span>
+    </div>
+  </footer>
+
+  <script src="js/data/projects.js" defer></script>
+  <script src="js/services/github-api.js" defer></script>
+  <script src="js/components/project-card.js" defer></script>
+  <script src="js/utils/navigation.js" defer></script>
+  <script src="js/pages/home.js" defer></script>
+</body>
+</html>

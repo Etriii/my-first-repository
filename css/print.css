@@ -1,0 +1,45 @@
+/* Print layout so the CV exports cleanly to paper or PDF. */
+
+@media print {
+  :root,
+  :root[data-theme="dark"] {
+    --color-bg: #ffffff;
+    --color-surface: #ffffff;
+    --color-surface-alt: #f2f4f6;
+    --color-text: #111111;
+    --color-text-muted: #444444;
+    --color-border: #d0d5db;
+    --color-accent: #0a6f5a;
+    --color-accent-soft: #e6f4f0;
+  }
+
+  body {
+    font-size: 11pt;
+  }
+
+  .site-header,
+  .site-footer,
+  .hero__actions,
+  .no-print {
+    display: none !important;
+  }
+
+  .section {
+    padding-top: 20px;
+    break-inside: avoid;
+  }
+
+  .card,
+  .hero__card,
+  .stat {
+    box-shadow: none;
+  }
+
+  .project-card:hover {
+    transform: none;
+  }
+
+  a {
+    color: inherit;
+  }
+}

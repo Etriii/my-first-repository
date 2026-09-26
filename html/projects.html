@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic and personal software projects by Alex, Jr. A. Aparece.">
+  <title>Projects | Alex, Jr. A. Aparece</title>
+
+  <link rel="icon" href="../assets/images/profile.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/print.css">
+
+  <script src="../js/utils/theme.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../index.html">alex<span>.</span>aparece</a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list" id="nav-list" data-nav-list>
+          <li><a class="nav__link" href="../index.html#about">About</a></li>
+          <li><a class="nav__link" href="../index.html#education">Education</a></li>
+          <li><a class="nav__link" href="../index.html#skills">Skills</a></li>
+          <li><a class="nav__link is-active" href="projects.html" aria-current="page">Projects</a></li>
+          <li><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn nav__toggle" type="button" aria-label="Open menu" aria-controls="nav-list" aria-expanded="false" data-nav-toggle>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-intro" aria-labelledby="projects-title">
+      <span class="section__eyebrow">Portfolio</span>
+      <h1 id="projects-title">Projects</h1>
+      <p>
+        School requirements, team systems, and self-directed experiments &mdash; from first-year Java
+        programs to full-stack web platforms. Source code for each is on GitHub.
+      </p>
+    </section>
+
+    <div class="section__header">
+      <div class="filter-bar" role="group" aria-label="Filter projects by category" data-filter-bar></div>
+      <span class="stat__label" data-project-count aria-live="polite"></span>
+    </div>
+
+    <div class="grid grid--3" data-project-grid>
+      <noscript>
+        <p>Enable JavaScript to see the project list, or browse them on <a href="https://github.com/Etriii?tab=repositories">GitHub</a>.</p>
+      </noscript>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span data-year>2026</span> Alex, Jr. A. Aparece</span>
+      <span>IT415 &middot; BSIT 4B &middot; Davao del Norte State College</span>
+    </div>
+  </footer>
+
+  <script src="../js/data/projects.js" defer></script>
+  <script src="../js/components/project-card.js" defer></script>
+  <script src="../js/utils/navigation.js" defer></script>
+  <script src="../js/pages/projects.js" defer></script>
+</body>
+</html>
